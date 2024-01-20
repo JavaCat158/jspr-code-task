@@ -6,7 +6,10 @@ import ru.netology.repository.PostRepository;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
+
 public class PostService {
+
+
   private final PostRepository repository;
   private final ConcurrentHashMap<Long, Post> posts = new ConcurrentHashMap<>();
 
