@@ -1,6 +1,5 @@
 package ru.netology.repository;
 
-
 import ru.netology.model.Post;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
@@ -10,6 +9,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 // Stub
 public class PostRepository {
+
   private final AtomicLong counterID= new AtomicLong(0);
   private final ConcurrentHashMap<Long, Post> posts= new ConcurrentHashMap<>();
   public List<Post> all() {
